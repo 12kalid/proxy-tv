@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Samsung Proxy</title>
+</head>
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const targetUrl = urlParams.get('url');
+        if (targetUrl) {
+            window.location.replace(targetUrl);
+        }
+    </script>
+</body>
+</html>
